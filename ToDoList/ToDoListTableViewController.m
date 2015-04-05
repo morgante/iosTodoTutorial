@@ -128,7 +128,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
     ToDoItem *tappedItem = [self.toDoItems objectAtIndex:indexPath.row];
-    tappedItem.completed = !tappedItem.completed;
+    [tappedItem toggleCompleted];
     
     [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
 }

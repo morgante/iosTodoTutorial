@@ -10,4 +10,8 @@
 
 @implementation ToDoItem
 
+- (void)toggleCompleted {
+    self.completed = !self.completed;
+}
+
 @end
